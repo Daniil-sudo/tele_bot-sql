@@ -83,7 +83,7 @@ def show_target(data):
 
 # ------------------- Инициализация бота -------------------
 state_storage = StateMemoryStorage()
-token_bot = '8405586746:AAF6IcLURol9JGu59wMhHaO9TTdOwHS01yI'
+token_bot = ''
 bot = TeleBot(token_bot, state_storage=state_storage)
 
 known_users = []
@@ -234,3 +234,4 @@ def message_reply(message):
 # ------------------- Запуск бота -------------------
 bot.add_custom_filter(custom_filters.StateFilter(bot))
 bot.infinity_polling(skip_pending=True)
+
